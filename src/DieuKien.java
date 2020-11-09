@@ -14,9 +14,12 @@ public class DieuKien {
         } else {
             if (pt.tinhdelta() == 0) {
                 System.out.print("pt co nghiem kep" + pt.nghiemkep());
-            } else {
+            } else if (pt.tinhdelta()>0){
                 System.out.println("pt co 2 nghiem pb");
                 pt.nghiemphanbiet();
+            }
+            else {
+                System.out.println("pt vo nghiem");
             }
         }
     }
